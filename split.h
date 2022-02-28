@@ -9,7 +9,7 @@ int split(char separator, char string[LENGHT_STRING], char arr[MAX_WORD][LENGHT_
 	unsigned int i = 0, k = 0, j = 0;
 	char word[LENGHT_STRING];
 	while (i < strlen(string) && j < MAX_WORD) {
-		while (string[i] != interruttore && i < strlen(string)) {
+		while (string[i] != separator && i < strlen(string)) {
 			arr[j][k++] = string[i++];
 		}
 		arr[j++][k] = '\0';
